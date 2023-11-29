@@ -1,20 +1,18 @@
 //main.js
 
-import {getlista} from "lista.js";
-
-
+import {getlista,limpaLista} from "lista.js";
 
 const pEntrada= document.querySelector('#Entrada');
 const olsaida= document.querySelector('#Saida');
 const btnAdicionar= document.querySelector('#Adicionar');
 const btnLimpar= document.querySelector('#Limpar');
 
-olsaida.innerHTML ="";
-
+atualizarItemdeLista();
+limpaLista();
 atualizarItemdeLista();
 
 function atualizarItemdeLista(){
-
+    olsaida.innerHTML ="";
     const lista = getlista;
     for (let i =0; i < array.lenght; i++){
         const item = lista[i];

@@ -5,4 +5,10 @@ function getlista() {
     return lista;
 }
 
-export {getlista};
+function limpaLista(){
+
+    lista.splice(0,3);
+
+}
+
+export {getlista, limpaLista};
