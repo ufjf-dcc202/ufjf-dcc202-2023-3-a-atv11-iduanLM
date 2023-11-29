@@ -7,9 +7,14 @@ const olsaida= document.querySelector('#Saida');
 const btnAdicionar= document.querySelector('#Adicionar');
 const btnLimpar= document.querySelector('#Limpar');
 
+
+btnLimpar.addEventListener('click', limparElementosDaLista);
 atualizarItemdeLista();
-limpaLista();
-atualizarItemdeLista();
+
+function limparElementosDaLista(){
+    limpaLista();
+    atualizarItemdeLista();
+}
 
 function atualizarItemdeLista(){
     olsaida.innerHTML ="";
