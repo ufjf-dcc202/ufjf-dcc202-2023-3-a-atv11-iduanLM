@@ -17,6 +17,7 @@ function limparElementosDaLista(){
     limpaLista();
     atualizarItemdeLista();
 }
+
 function criaElementoNaLista(){
     const texto =pEntrada.textContent;
     adicionarNalista(texto);

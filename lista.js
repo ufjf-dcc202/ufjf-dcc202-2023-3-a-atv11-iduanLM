@@ -7,8 +7,12 @@ function getlista() {
 
 function limpaLista(){
 
-    lista.splice(0,3);
+    lista.splice(0);
+}
+
+function adicionarNalista(novoitem){
+lista.push(novoitem);
 
 }
 
-export {getlista, limpaLista};
+export {getlista, limpaLista,adicionarNalista};
